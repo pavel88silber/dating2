@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+
+.menu {
+  margin: 10px;
+} 
+
+.uImg {
+  border-radius: 30%;
+  width: 200px;
+  height: 200px;
+}
+
+.cardBody {
+  display: inline-block;
+}

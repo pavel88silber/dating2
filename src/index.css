@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.menuLinks {
+  text-decoration: none;
+  color: black;
+  
+}
+.menuLinks:hover {
+  background-color: red;
+}
+
+.menuText {
+  font-family: 'Sofia';
+  font-size: 20px;
+  color: red;
+}
+
+.messageList {
+  border: 1px solid black;
+}
+
+.message {
+  border: 1px solid black;
+  height: 200px;
+}
