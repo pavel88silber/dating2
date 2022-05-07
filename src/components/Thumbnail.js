@@ -1,16 +1,26 @@
 import React from 'react';
 import { createRoot } from "react-dom/client";
-import bootstrap from "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { Container, Card, Row, Col, Button, Alert, Breadcrumb, Form } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image'
+import bootstrap from "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 import users from "./userstest";
+// import usertestObj  from './usertestObj';
+// const userArr =[];
 
 export default function Thumbnail() {
+    // const usr = Object.values(usertestObj);
+    // for (const val in usr) {
+    //     userArr.push(val);
+    // }
+    // console.log('test => ' + userArr)
+
+
+
     return (
             <ul>
-                {users.map(user=>
-                <li className='cardBody'>
+                {users.map((user, index)=>
+                <li className='cardBody' key={index}>
                     <Card style={{ width: '18rem' }}>
                     <Card.Img src={user.image}/>
                     <Card.Body>

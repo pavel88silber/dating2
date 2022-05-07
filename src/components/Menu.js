@@ -1,14 +1,15 @@
 import React from 'react';
 import { createRoot } from "react-dom/client";
-import { Container, Card, Row, Col, Button, Alert, Breadcrumb, Form, Nav, Navbar, NavDropdown, FormControl } from 'react-bootstrap';
-import bootstrap from "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import { Container, Card, Row, Col, Button, Alert, Breadcrumb, Form, Nav, Navbar, NavDropdown, FormControl, Image } from 'react-bootstrap';
+import bootstrap from '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
 
 export default function Menu() {
     return (
         <Navbar bg="light" expand="lg" className='menuText'>
         <Container fluid>
-          <Navbar.Brand href="#">
+          <Navbar.Brand href="/">
+            <Image id="logo" src="https://cdn4.iconfinder.com/data/icons/love-wins/500/Rainbow_lance-512.png" ></Image>
             <Link to="/" className='menuLinks'>Dating</Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
